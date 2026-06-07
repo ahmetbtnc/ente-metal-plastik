@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#030712;
+    color:white;
+}
+
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 80px;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(0,0,0,0.25);
+
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(249,115,22,0.25),
+    transparent 35%),
+    #030712;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:40px;
+}
+
+.badge{
+    display:inline-block;
+
+    padding:12px 20px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:999px;
+
+    margin-bottom:30px;
+
+    color:#f97316;
+}
+
+.hero h1{
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:30px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn-primary{
+    background:#f97316;
+    color:white;
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+}
+
+.btn-secondary{
+    border:1px solid #334155;
+
+    color:white;
+
+    padding:16px 30px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+}
