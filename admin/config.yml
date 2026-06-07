@@ -12,4 +12,5 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Ürün Adı", name: "title", widget: "string" }
+      - { label: "Açıklama", name: "description", widget: "text" }

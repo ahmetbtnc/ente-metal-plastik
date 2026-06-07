@@ -1,17 +1,26 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ente Metal Admin</title>
+  </head>
 
-  <!-- Netlify Identity -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <body>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-  <!-- DOĞRU CMS -->
-  <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms@3.1.9/dist/decap-cms.js"></script>
 
-</body>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
